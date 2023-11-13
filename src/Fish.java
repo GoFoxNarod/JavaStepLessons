@@ -32,5 +32,13 @@ public class Fish extends Animal{
     public void bul_bul(){
         System.out.println("BUL-BUL");
     }
+    @Override
+    public void display(){
+        System.out.println(("I am Fish" +" "+ "Тип: " + type + ", Имя: " + name + ", Возраст: " + age + ", Вес: " + weight +
+                ", Умеет летать: " + (isFly ? "Да" : "Нет") + ", Умеет ходить: "
+                + (isWalk ? "Да" : "Нет") + ", Умеет плавать: " + (isSwim ? "Да" : "Нет") + ", " + getSquama() +
+                "Умеет ли плавать против течения:" + (isSwim ? "ДА" : "НЕТ" )+"."));
+
+    }
 }
 

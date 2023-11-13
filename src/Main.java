@@ -14,11 +14,11 @@ public class Main {
 
         Fish f = new Fish();
         f.setName("Сельд");
-        f.display();
         f.setSquama("Крупная");
         f.setUpStreamSwim(true);
-        System.out.println(f.getSquama());
-        System.out.println(f.isUpStreamSwim());
+        f.display();
+      // System.out.println(f.getSquama());
+       // System.out.println(f.isUpStreamSwim());
         f.bul_bul();
 
         Insect i = new Insect();
