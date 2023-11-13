@@ -5,11 +5,11 @@ public class Main {
 
         Bird b = new Bird();
         b.setName("Bob");
-        b.display();
         b.setArea("На югах");
+        b.display();
         b.setWinterFly(false);
-        System.out.println(b.getArea());
-        System.out.println(b.isWinterFly());
+       // System.out.println(b.getArea());
+       // System.out.println(b.isWinterFly());
         b.chirik_chirik();
 
         Fish f = new Fish();

@@ -42,7 +42,8 @@ public class Bird extends Animal {
     public void display(){
         System.out.println("I am Bird" +" "+ "Тип: " + type + ", Имя: " + name + ", Возраст: " + age + ", Вес: " + weight +
                 ", Умеет летать: " + (isFly ? "Да" : "Нет") + ", Умеет ходить: "
-                + (isWalk ? "Да" : "Нет") + ", Умеет плавать: " + (isSwim ? "Да" : "Нет"));
+                + (isWalk ? "Да" : "Нет") + ", Умеет плавать: " + (isSwim ? "Да" : "Нет") + ", " + getArea() +
+                "Улетают зимовать:" + (winterFly ? "ДА" : "НЕТ" )+".");
 
     }
 }
