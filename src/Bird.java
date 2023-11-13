@@ -38,5 +38,13 @@ public class Bird extends Animal {
     public void chirik_chirik(){
         System.out.println("Chirik-Chirik");
     }
+    @Override
+    public void display(){
+        System.out.println("I am Bird" +" "+ "Тип: " + type + ", Имя: " + name + ", Возраст: " + age + ", Вес: " + weight +
+                ", Умеет летать: " + (isFly ? "Да" : "Нет") + ", Умеет ходить: "
+                + (isWalk ? "Да" : "Нет") + ", Умеет плавать: " + (isSwim ? "Да" : "Нет"));
+
+    }
 }
+
 
