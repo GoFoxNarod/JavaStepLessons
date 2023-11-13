@@ -1,5 +1,4 @@
 public class Animal {
-
     String type;
      String name;
     int age;
@@ -7,7 +6,6 @@ public class Animal {
     boolean isFly;
     boolean isWalk;
     boolean isSwim;
-
     public Animal(){
 
     }

@@ -1,7 +1,6 @@
 public class Insect extends Animal{
     int wingCount;
     boolean likeJesus;
-
     Insect(){
         super();
         super.type = "Насекомое";
