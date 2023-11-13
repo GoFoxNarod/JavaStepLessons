@@ -23,11 +23,11 @@ public class Main {
 
         Insect i = new Insect();
         i.setName("Жук Жукыч");
-        i.display();
         i.setWingCount(4);
         i.setLikeJesus(true);
-        System.out.println(i.getWingCount());
-        System.out.println(i.isLikeJesus());
+        i.display();
+       // System.out.println(i.getWingCount());
+        //System.out.println(i.isLikeJesus());
         i.gggggg();
 
     }

@@ -25,10 +25,17 @@ public class Insect extends Animal{
         this.likeJesus = likeJesus;
     }
     public String isLikeJesus(){
-        return "Умеет ли ходить:"+(likeJesus ?"ДА":"НЕТ");
+        return "Умеет ли ходить по воде:"+(likeJesus ?"ДА":"НЕТ");
     }
     public void gggggg(){
         System.out.println("Gggggg!!!!");
+    }
+    @Override
+    public void display(){
+        System.out.println("I am Insect"+" "+ "Тип: " + type + ", Имя: " + name + ", Возраст: " + age + ", Вес: " + weight +
+                ", Умеет летать: " + (isFly ? "Да" : "Нет") + ", Умеет ходить: "
+                + (isWalk ? "Да" : "Нет") + ", Умеет плавать: " + (isSwim ? "Да" : "Нет") + ", " + getWingCount() +
+                isLikeJesus() +".");
     }
 }
 
