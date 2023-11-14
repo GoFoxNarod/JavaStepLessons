@@ -1,2 +1,2 @@
-public class Ruler {
+public class Ruler extends WritingMaterials{
 }

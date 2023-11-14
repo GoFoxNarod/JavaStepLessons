@@ -1,2 +1,2 @@
-public class Pen {
+public class Pen extends WritingMaterials{
 }

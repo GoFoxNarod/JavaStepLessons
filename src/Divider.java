@@ -1,2 +1,2 @@
-public class Divider {
+public class Divider extends WritingMaterials {
 }
