@@ -30,13 +30,13 @@ public class WritingMaterials {
         this.color = color;
         System.out.println("Новый цвет:"+color);
     }
-    public void priceUp(int price){
+    public void priceUp(int price2){
         this.price = price;
-        System.out.println("Увеличивает цену на это число. Новая цена:" + (price+price));
+        System.out.println("Увеличивает цену на это число. Новая цена:" + (price+price2));
     }
-    public void priceDown(int price){
+    public void priceDown(int price2){
         this.price = price;
-        System.out.println("Уменьшает цену на это число. Новая цена:" + (price-price));
+        System.out.println("Уменьшает цену на это число. Новая цена:" + (price-price2));
     }
     public void draw(){
         System.out.println(draw? name +" провел линию. Её цвет - "+color+".": name+" не может ничего рисовать!");
