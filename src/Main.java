@@ -1,29 +1,23 @@
 public class Main {
     public static void main(String[] args) {
         WritingMaterials pen = new WritingMaterials();
-        pen.name = "ручка";
-        pen.color = "Красный";
-        pen.length = 15.6;
-        pen.price = 145;
-        pen.draw = true;
-        pen.display();
+        pen.setName("ручка");
+        pen.setColor("Красный");
+        pen.setLength(11.6);
+        pen.setPrice(167);
+        pen.setDraw(true);
         pen.draw();
-        pen.priceDown(10);
-        pen.display();
-        pen.priceUp(23);
-        pen.display();
-        pen.replace_rod("Синий");
-        pen.draw();
+        pen.draw("Синий");
+        pen.draw("Зелёный", 15);
+        pen.draw(4);
+        System.out.println();
 
-        WritingMaterials ruler = new WritingMaterials();
-        ruler.name = "линейка";
-        ruler.length = 30.0;
-        ruler.price = 25;
-        ruler.draw = false;
-        ruler.display();
-        ruler.draw();
-        ruler.priceUp(13);
-        ruler.display();
+        WritingMaterials ruler = new WritingMaterials("линека", 34);
+        ruler.setDraw(false);
+        ruler.draw("Синий");
+        ruler.draw("Зелёный", 15);
+        ruler.draw(4);
+
 
     }
 }
