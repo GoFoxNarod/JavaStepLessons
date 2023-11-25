@@ -37,9 +37,15 @@ public class WritingMaterials {
     public void setPrice(int price){
         this.price = price;
     }
-    public void setDraw(boolean draw){
+    public boolean setDraw(boolean draw){
         this.draw = draw;
+        return draw;
     }
+
+    public boolean isDraw() {
+        return draw;
+    }
+
     public String getName(){
         return name;
     }

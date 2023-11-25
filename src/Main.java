@@ -7,9 +7,9 @@ public class Main {
         p.setName("Паркер");
         p.display();
         p.setCountColor(2);
-        p.setAuto(false);
-        System.out.println(p.getCountColor());
-        System.out.println(p.isAuto());
+        p.setAuto(true);
+        System.out.println("Количество цветов:"+p.getCountColor());
+        System.out.println("Автоматическая:"+(p.isAuto()?"ДА":"НЕТ"));
         p.writeMyName();
 
     }
