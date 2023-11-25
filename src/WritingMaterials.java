@@ -40,6 +40,9 @@ public class WritingMaterials {
     public void setDraw(boolean draw){
         this.draw = draw;
     }
+    public String getName(){
+        return name;
+    }
 
     public void display(){
         System.out.println("Название:"+ name +". Цвет:"+ color +". Цена:"+ price+ ".Длина:" +length+
