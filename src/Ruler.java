@@ -23,4 +23,7 @@ public class Ruler extends WritingMaterials{
         this.length = length;
         this.wood = wood;
     }
+    public void measure(){
+        System.out.println("Сейчас померяем длину");
+    }
 }
