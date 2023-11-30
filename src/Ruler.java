@@ -26,4 +26,21 @@ public class Ruler extends WritingMaterials{
     public void measure(){
         System.out.println("Сейчас померяем длину");
     }
+
+    public double getLength() {
+        return length;
+    }
+
+    public boolean isWood() {
+        return wood;
+    }
+
+    @Override
+    public void setLength(double length) {
+        this.length = length;
+    }
+
+    public void setWood(boolean wood) {
+        this.wood = wood;
+    }
 }
