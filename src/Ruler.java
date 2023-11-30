@@ -43,4 +43,8 @@ public class Ruler extends WritingMaterials{
     public void setWood(boolean wood) {
         this.wood = wood;
     }
+    @Override
+    public void display() {
+        System.out.println("Имя:" + super.getName()+".Умеет рисовать:"+ (super.isDraw()?"Да":"НЕТ"));
+    }
 }

@@ -7,10 +7,27 @@ public class Main {
         p.setName("Паркер");
         p.display();
         p.setCountColor(2);
-        p.setAuto(true);
-        System.out.println("Количество цветов:"+p.getCountColor());
-        System.out.println("Автоматическая:"+(p.isAuto()?"ДА":"НЕТ"));
+        p.setAuto(false);
+        System.out.println("Количество цветов:"+(p.getCountColor()));
+        System.out.println("Автоматическая - "+(p.isAuto()?"ДА":"НЕТ"));
         p.writeMyName();
 
+        Ruler r = new Ruler();
+        r.setName("Линейка");
+        r.display();
+        r.setLength(25);
+        r.setWood(true);
+        System.out.println("Длина линейки:"+(r.getLength()));
+        System.out.println("Из дерева:"+(r.isWood()?"ДА":"НЕТ"));
+        r.measure();
+
+        Divider d = new Divider();
+        d.setName("Циркуль");
+        d.display();
+        d.setDividerType("С карандашом");
+        d.setMetal(true);
+        System.out.println("Тип циркуля:"+d.getDividerType());
+        System.out.println("сделан ли этот циркуль из металла"+(d.isMetal()?"ДА":"НЕТ"));
+        d.draw_circle();
     }
 }
