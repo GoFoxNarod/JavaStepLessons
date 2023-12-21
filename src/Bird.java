@@ -1,12 +1,13 @@
 public class Bird extends Animal {
     String area;
     boolean winterFly;
-    public Bird(){
-        super();
+    {
         super.type = "Птица";
         super.isFly = true;
         this.area = "No area";
         this.winterFly = false;
+    }
+    public Bird(){
 
     }
 

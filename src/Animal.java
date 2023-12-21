@@ -1,11 +1,16 @@
 public class Animal {
     String type;
-     String name;
+    String name;
     int age;
     double weight;
     boolean isFly;
     boolean isWalk;
     boolean isSwim;
+    {
+        type = "undifined";
+        name = "undifined";
+        age = 0;
+    }
     public Animal(){
 
     }

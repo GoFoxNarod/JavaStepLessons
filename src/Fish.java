@@ -1,14 +1,14 @@
 public class Fish extends Animal{
     String squama;
     boolean upStreamSwim;
-
-    Fish(){
-        super();
+    {
         super.type = "РЫБЫ";
         super.isSwim = true;
         this.squama = "No";
         this.upStreamSwim = false;
+    }
 
+    Fish(){
     }
 
     public void setName(String name){

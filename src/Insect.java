@@ -1,12 +1,14 @@
 public class Insect extends Animal{
     int wingCount;
     boolean likeJesus;
-    Insect(){
-        super();
+    {
         super.type = "Насекомое";
         super.isWalk = true;
         this.wingCount = 0;
         this.likeJesus = false;
+    }
+    Insect(){
+
     }
 
     public void setName(String name){
