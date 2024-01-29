@@ -2,7 +2,7 @@ public class Animal {
     String type;
     String name;
     int age;
-    double weight;
+     double weight;
     boolean isFly;
     boolean isWalk;
     boolean isSwim;
@@ -10,6 +10,11 @@ public class Animal {
         type = "undifined";
         name = "undifined";
         age = 0;
+    }
+
+    public static void StringDescription(){
+        System.out.println("Класс животные");
+
     }
     public Animal(){
 
@@ -50,4 +55,6 @@ public class Animal {
     public void holiday() {
         holiday(0.1);
     }
+
+    
 }

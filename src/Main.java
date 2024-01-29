@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+                Animal.StringDescription();
                 Animal duck = new Animal("Утка", "Утя", 3, 5.8, true, true, true);
                 duck.display();
 
