@@ -11,13 +11,16 @@ public class Animal {
         name = "undifined";
         age = 0;
     }
+    private int id;
+    static int counter = 1;
 
     public static void StringDescription(){
         System.out.println("Класс животные");
 
     }
     public Animal(){
-
+        id = counter;
+        counter++;
     }
 
     public Animal(String type,String name, int age, double weight, boolean isFly, boolean isSwim, boolean isWalk){
@@ -35,7 +38,13 @@ public class Animal {
         this.name = name;
     }
 
-    public void display() {
+    @Override
+    public  String toString(){
+        return (" Номер:"+ counter+" "+"Тип: " + type + ", Имя: " + name + ", Возраст: " + age + ", Вес: " + weight +
+                ", Умеет летать: " + (isFly ? "Да" : "Нет") + ", Умеет ходить: "
+                + (isWalk ? "Да" : "Нет") + ", Умеет плавать: " + (isSwim ? "Да" : "Нет"));
+    }
+   public void display() {
         System.out.println("Тип: " + type + ", Имя: " + name + ", Возраст: " + age + ", Вес: " + weight +
                 ", Умеет летать: " + (isFly ? "Да" : "Нет") + ", Умеет ходить: "
                 + (isWalk ? "Да" : "Нет") + ", Умеет плавать: " + (isSwim ? "Да" : "Нет"));
@@ -55,6 +64,8 @@ public class Animal {
     public void holiday() {
         holiday(0.1);
     }
+
+
 
     
 }

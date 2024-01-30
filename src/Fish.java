@@ -6,6 +6,7 @@ public class Fish extends Animal{
         super.isSwim = true;
         this.squama = "No";
         this.upStreamSwim = false;
+
     }
 
     Fish(){

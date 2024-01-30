@@ -2,34 +2,29 @@ public class Main {
     public static void main(String[] args) {
                 Animal.StringDescription();
                 Animal duck = new Animal("Утка", "Утя", 3, 5.8, true, true, true);
-                duck.display();
+                System.out.println(duck);
 
                 Bird b = new Bird();
                 b.setName("Bob");
-                b.display();
                 b.setArea("На югах");
                 b.setWinterFly(false);
-                System.out.println(b.getArea());
-                System.out.println(b.isWinterFly());
+                System.out.println(b);
                 b.chirik_chirik();
 
                 Fish f = new Fish();
                 f.setName("Сельд");
-                f.display();
                 f.setSquama("Крупная");
                 f.setUpStreamSwim(true);
-                System.out.println(f.getSquama());
-                System.out.println(f.isUpStreamSwim());
+                System.out.println(f);
                 f.bul_bul();
 
                 Insect i = new Insect();
                 i.setName("Жук Жукыч");
-                i.display();
                 i.setWingCount(4);
                 i.setLikeJesus(true);
-                System.out.println(i.getWingCount());
-                System.out.println(i.isLikeJesus());
+                System.out.println(i);
                 i.gggggg();
+                System.out.println("Количество животных: " +Animal.counter);
 
             }
         }
