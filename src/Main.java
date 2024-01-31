@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
+        WritingMaterials.info();
         WritingMaterials wm = new WritingMaterials("ручка", "Красный", 145, 15.6, true);
         wm.display();
-
         Pen p = new Pen();
         p.setName("Паркер");
         p.display();

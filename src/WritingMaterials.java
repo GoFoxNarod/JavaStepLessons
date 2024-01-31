@@ -1,9 +1,15 @@
 public class WritingMaterials {
-  private  String name;
+    private  String name;
     private String color;
     private int price;
     private double length;
     private boolean draw;
+    private static String description;
+
+    static {
+        description = "Класс письменной принадлежности";
+    }
+
 
     WritingMaterials(){
 
@@ -78,6 +84,9 @@ public class WritingMaterials {
     }
     public void draw(String color, int n){
         System.out.println(draw? name +" провел линий:"+ n +". Их цвет:"+color+".": name +" не может ничего рисовать!");
+    }
+    public static void info(){
+        System.out.println(description);
     }
 
 
