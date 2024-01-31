@@ -6,12 +6,16 @@ public class WritingMaterials {
     private boolean draw;
     private static String description;
 
+    static int count = 1;
+
     static {
         description = "Класс письменной принадлежности";
     }
 
 
     WritingMaterials(){
+        count++;
+        color = "Undefined";
 
     }
     WritingMaterials(String name, String color, int price,double length, boolean draw){
@@ -55,7 +59,12 @@ public class WritingMaterials {
     public String getName(){
         return name;
     }
+    @Override
+    public String toString(){
+        return "Номер объекта: "+count +"Название:"+ name +". Цвет:"+ color +". Цена:"+ price+ ".Длина:" +length+
+                ". Умеет рисовать:"+ (draw ?"ДА":"НЕТ");
 
+    }
     public void display(){
         System.out.println("Название:"+ name +". Цвет:"+ color +". Цена:"+ price+ ".Длина:" +length+
                 ". Умеет рисовать:"+ (draw ?"ДА":"НЕТ"));

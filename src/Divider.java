@@ -44,7 +44,7 @@ public class Divider extends WritingMaterials {
     public boolean isMetal() {
         return metal;
     }
-    public void draw_circle(){
+    public final void draw_circle(){
         System.out.println("Нарисован круг");
     }
     @Override

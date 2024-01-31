@@ -5,12 +5,12 @@ public class Main {
         wm.display();
         Pen p = new Pen();
         p.setName("Паркер");
-        p.display();
         p.setCountColor(2);
         p.setAuto(false);
         System.out.println("Количество цветов:"+(p.getCountColor()));
         System.out.println("Автоматическая - "+(p.isAuto()?"ДА":"НЕТ"));
         p.writeMyName();
+        System.out.println(p);
 
         Ruler r = new Ruler();
         r.setName("Линейка");
@@ -29,5 +29,6 @@ public class Main {
         System.out.println("Тип циркуля:"+d.getDividerType());
         System.out.println("сделан ли этот циркуль из металла"+(d.isMetal()?"ДА":"НЕТ"));
         d.draw_circle();
+        System.out.println("Количество созданных объектов = "+ WritingMaterials.count);
     }
 }
